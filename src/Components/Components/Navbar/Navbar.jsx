@@ -21,6 +21,9 @@ const Navbar = () => {
   const handleAbout = () => {
     navigate('/about');
   };
+  const handleContact = () => {
+    navigate('/contactus');
+  };
 
   return (
     <nav>
@@ -35,7 +38,7 @@ const Navbar = () => {
       <ul className={`nav-links ${isActive ? 'active' : ''}`}>
         <li><a href="#" onClick={handleHome}>Home</a></li>
         <li><a href="#"onClick={handleAbout} >About</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#" onClick={handleContact}>Contact Us</a></li>
         <li><a className="login-button" onClick={handleSignUp}>Sign-Up</a></li>
       </ul>
     </nav>

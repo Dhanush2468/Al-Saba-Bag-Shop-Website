@@ -31,7 +31,7 @@ const Collagebag = () => {
             arrimg={item.arrimg}
           />
         ))}
-      </div><br />
+      </div><br /><br />
       {/* slider */}
       <Footer />
     </div>

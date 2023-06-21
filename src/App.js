@@ -18,6 +18,7 @@ import Collagebag1 from './Components/Components/Bags/Collagebag1';
 import LadiesBag from './Components/Components/Bags/LadiesBag';
 import DuffelBag from './Components/Components/Bags/DuffelBag';
 import About from './Pages/About';
+import Contactus from './Pages/Contactus/Contactus';
 
 function App() {
   return (
@@ -33,6 +34,10 @@ function App() {
       </Route>
       <Route path='/login' element={
          <Login />
+      }>
+      </Route>
+      <Route path='/contactus' element={
+         <Contactus />
       }>
       </Route>
       <Route path='/schoolbag' element={
