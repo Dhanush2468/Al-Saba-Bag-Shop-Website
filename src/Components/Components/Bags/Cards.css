@@ -1,0 +1,84 @@
+/* Cards.css */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .card-details {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .restaurant-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .restaurant-address {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #888;
+  }
+  
+  .delivery-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .delivery-image img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .order-count {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  
+  .rating img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .rating-value {
+    font-size: 14px;
+    color: #888;
+  }
+  
