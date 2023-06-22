@@ -1,66 +1,66 @@
 import React from 'react';
-import './Footer.css'
+import './Footer.css';
+
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
-  const handleSubscribe = (event) => {
-    event.preventDefault();
-
-    const email = event.target.elements.email.value;
-
-    // Perform validation on the email address
-    if (!isValidEmail(email)) {
-      // Handle invalid email address
-      alert('Please enter a valid email address.');
-      return;
-    }
-
-    // Perform subscription logic
-    // You can make an API call to your backend or perform any other actions here
-
-    // Clear the input field after successful subscription
-    event.target.elements.email.value = '';
-
-    // Show a success message or perform any other UI updates
-    alert('Thank you for subscribing!');
-  };
-
-  const isValidEmail = (email) => {
-    // Basic email validation regex pattern
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailPattern.test(email);
-  };
-
   return (
     <footer>
-      <div className="footer-container">
-        
-        <div className="footer-links">
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/services">Services</a>
-          <a href="/contact">Contact</a>
+      <div className="content">
+        <div className="top">
+          <div className="logo-details">
+            <i className="fab fa-slack"></i>
+            <span className="logo_name">AL-SABA</span>
+          </div>
+          <div className="media-icons">
+            <a href="#"><i className="fab fa-facebook-f"></i></a>
+            <a href="#"><i className="fab fa-twitter"></i></a>
+            <a href="#"><i className="fab fa-instagram"></i></a>
+            <a href="#"><i className="fab fa-linkedin-in"></i></a>
+            <a href="#"><i className="fab fa-youtube"></i></a>
+          </div>
         </div>
-        <div className="social-icons">
-          <a href="https://twitter.com/example"><i className="fab fa-twitter"></i></a>
-          <a href="https://facebook.com/example"><i className="fab fa-facebook"></i></a>
-          <a href="https://linkedin.com/example"><i className="fab fa-linkedin"></i></a>
-          <a href="https://instagram.com/example"><i className="fab fa-instagram"></i></a>
+        <div className="link-boxes">
+          <ul className="box">
+            <li className="link_name"></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Get started</a></li>
+          </ul>
+          <ul className="box">
+            <li className="link_name">Products</li>
+            <li><a href="#">School-Bags</a></li>
+            <li><a href="#">Collage-Bags</a></li>
+            <li><a href="#">Lunch-Bags</a></li>
+            <li><a href="#">Girls-Bags</a></li>
+          </ul>
+          <ul className="box">
+            <li className="link_name"></li>
+            <li><a href="#">Toorist-Bags</a></li>
+            <li><a href="#">Duffel-Bags</a></li>
+            <li><a href="#">Seeling-Bags</a></li>
+            <li><a href="#">Ladies-Perse</a></li>
+          </ul>
+          <ul className="box input-box">
+            <li className="link_name">Subscribe</li>
+            <li><input type="text" placeholder="Enter your email" /></li>
+            <li><input type="button" value="Subscribe" /></li>
+          </ul>
         </div>
-        <div className="subscribe">
-          <h4>Subscribe to Our Newsletter</h4>
-          <form onSubmit={handleSubscribe}>
-            <input type="email" name="email" placeholder="Your email address" required />
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
-        <div className="footer-content">
-          <p>© {currentYear} All rights reserved.</p>
-          <p>Powered by AL SABA</p>
+      </div>
+      <div className="bottom-details">
+        <div className="bottom_text">
+          <span className="copyright_text">
+            Copyright &#169; 2023 <a href="#">Al-Sabba.</a>
+            All rights reserved
+          </span>
+          <span className="policy_terms">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & condition</a>
+          </span>
         </div>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
